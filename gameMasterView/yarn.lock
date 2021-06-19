@@ -142,6 +142,11 @@ builtin-modules@^3.1.0:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.2.0.tgz#45d5db99e7ee5e6bc4f362e008bf917ab5049887"
   integrity sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==
 
+carbon-icons-svelte@^10.33.0:
+  version "10.33.0"
+  resolved "https://registry.yarnpkg.com/carbon-icons-svelte/-/carbon-icons-svelte-10.33.0.tgz#d890147c01e4d722229fcff1e8b34ad248b4535b"
+  integrity sha512-0NsHAASuNNbRUVZZudgPeCdaTepkWbbKjjH1Xb+tK4NsSRrtTEk6zyWL6EwUNL4x64OuJ1kbcrSHe1Vao0PlOw==
+
 chalk@^2.0.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"

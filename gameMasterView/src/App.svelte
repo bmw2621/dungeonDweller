@@ -1,35 +1,19 @@
 <script>
-	export let name;
+	import Layout from "./components/Layout/Layout.svelte"
+	import CampaignSelector from "./components/CampaignSelector/CampaignSelector.svelte"
+	// import { DmMap } from "./components/DmMap"
+	import { campaignId } from "./store"
 
-	const handleOpenScreen = () => {
-		openSecondScreen();
-	}
+
+	// const setCampaignId = e => campaignId.set(e.detail)
+	
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<button on:click={handleOpenScreen}>Open other screen</button>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Layout>
+	<p>Blah</p>
+	{#if $campaignId}
+	<!-- <DmMap /> -->
+	{:else}
+	<CampaignSelector />
+	{/if}
+</Layout>
