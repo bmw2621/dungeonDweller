@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Oxygen;
+  src: url("./Oxygen-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Oxygen;
+  src: url("./Oxygen-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Oxygen;
+  src: url("./Oxygen-Light.ttf") format("truetype");
+  font-weight: 100;
+}
+
+:root {
+  --primaryBg: #232323;
+  --secondaryBg: #3b3b3b;
+  --bloodRed: rgb(108, 1, 1);
+  --highlight: #aaa;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Oxygen;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.selectedOverlay {
+  outline: 10px solid red;
+}
