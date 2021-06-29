@@ -12,10 +12,10 @@ import (
 	"github.com/zserge/lorca"
 )
 
-//go:embed gameMasterView/public
+//go:embed views/gameMasterView/public
 var gmFolder embed.FS
 
-//go:embed playersView/public
+//go:embed views/playersView/public
 var playerFolder embed.FS
 
 // TODO Consider struct patter to keep things
