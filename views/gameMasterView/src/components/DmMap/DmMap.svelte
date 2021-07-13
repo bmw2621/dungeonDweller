@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { campaignId } from "../../store.ts"
+    import { campaignId } from "../../store"
 </script>
 
 <div id="container">

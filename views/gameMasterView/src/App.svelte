@@ -2,7 +2,7 @@
 	import { Layout } from "./components/Layout/"
 	import { CampaignSelector } from "./components/CampaignSelector"
 	import { DmMap } from "./components/DmMap"
-	import { campaignId } from "./store.ts"
+	import { campaignId } from "./store"
 
 
 	const openCampaign = (id: number) => {

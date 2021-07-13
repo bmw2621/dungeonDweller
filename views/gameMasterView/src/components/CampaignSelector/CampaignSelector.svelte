@@ -2,11 +2,11 @@
     import CampaignTable from "./CampaignTable.svelte"
     import Confirmation from "./Confirmation.svelte"
     import Dialogue from "./Dialogue.svelte"
-    import type { Campaign } from "../../typings"
+    import type { ICampaign } from "../../typings"
 
-    let campaignSelected: Campaign;
+    let campaignSelected: ICampaign;
     
-    const selectCampaign = (campaign: Campaign) => {
+    const selectCampaign = (campaign: ICampaign) => {
         campaignSelected = campaign;
     }
 

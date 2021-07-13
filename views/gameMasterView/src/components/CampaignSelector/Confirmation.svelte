@@ -1,8 +1,8 @@
 <script lang="ts">
     import {createEventDispatcher} from 'svelte'
     import {formatDate} from "../../utils"
-    import type { Campaign } from "../../typings"
-    export let campaignSelected: Campaign;
+    import type { ICampaign } from "../../typings"
+    export let campaignSelected: ICampaign;
 
     const dispatch = createEventDispatcher();
 

@@ -1,9 +1,9 @@
 <script lang="ts">
     import CampaignTableRow from "./CampaignTableRow.svelte"
-    import type { Campaign } from "../../typings"
+    import type { ICampaign } from "../../typings"
   
 
-    const allCampaigns: Campaign[] = [
+    const allCampaigns: ICampaign[] = [
         {
             id: 1,
             title: "Battle of IcewindDale",
