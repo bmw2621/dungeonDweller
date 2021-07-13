@@ -1,10 +1,8 @@
 <script>
     import { fade } from 'svelte/transition'
     import ChevronLeft32 from "carbon-icons-svelte/lib/ChevronLeft32";
-
-   
-
 </script>
+
 <div id="leftBarContainer" in:fade={{delay: 400}} out:fade>
     <div id="leftBar">
         <button>Add Map</button>

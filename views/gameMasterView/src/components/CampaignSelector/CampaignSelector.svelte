@@ -1,14 +1,18 @@
-<script>
+<script lang="ts">
     import CampaignTable from "./CampaignTable.svelte"
+    import Confirmation from "./Confirmation.svelte"
     import Dialogue from "./Dialogue.svelte"
+    import type { Campaign } from "../../typings"
 
-    const selectCampaign = e => {
-        alert(JSON.stringify(e.detail, null, 2))
+    let campaignSelected: Campaign;
+    
+    const selectCampaign = (campaign: Campaign) => {
+        campaignSelected = campaign;
     }
 
 </script>
 
-<div id="container">
+<div id="campaignSelector">
     <video loop autoplay>
         <track kind="captions" />
         <source src="bg.webm" type="video/webm">
@@ -16,7 +20,11 @@
     </video>
 
     <Dialogue>
-        <CampaignTable on:campaignSelected={e => selectCampaign(e)}/>
+        {#if campaignSelected}
+        <Confirmation on:openCampaign on:campaignSelected={e => selectCampaign(e.detail)} campaignSelected={campaignSelected} />
+        {:else}
+        <CampaignTable on:campaignSelected={e => selectCampaign(e.detail)}/>
+        {/if}
     </Dialogue>
 
 </div>

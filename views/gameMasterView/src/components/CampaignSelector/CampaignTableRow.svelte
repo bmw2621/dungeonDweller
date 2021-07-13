@@ -1,13 +1,11 @@
-<script>
+<script lang="ts">
     import {createEventDispatcher} from 'svelte'
+    import {formatDate} from "../../utils"
+    import type { Campaign } from "../../typings"
 
-    export let campaign;
+    export let campaign: Campaign;
 
     const dispatch = createEventDispatcher();
-
-    const formatDate = (dateStr) => {
-        return new Date(dateStr).toLocaleString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })
-    }
 
     const handleSelectCampaign = () => {
         dispatch('campaignSelected', campaign)

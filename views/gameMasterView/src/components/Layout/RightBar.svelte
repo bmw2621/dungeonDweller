@@ -1,15 +1,15 @@
 <script>
     import { fade } from 'svelte/transition'
     import ChevronRight32 from "carbon-icons-svelte/lib/ChevronRight32";
-    import { campaignId, campaignMap, overlays } from "../../store"
+    import { campaignId, campaignMap, overlays } from "../../store.ts"
 
     const handleExit = () => {
         campaignId.set(null)
         campaignMap.set(null)
         overlays.set([])
     }
-
 </script>
+
 <div id="rightBarContainer" in:fade={{delay: 400}} out:fade>
     <div id="rightBar">
         <div id="gameButtons">

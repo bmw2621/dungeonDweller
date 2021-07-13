@@ -4,7 +4,7 @@
 
 </script>
 
-<div id="modal" in:fade={{delay: 400}} out:fade>
+<div id="modal" transition:fade>
     <slot></slot>
 </div>
 

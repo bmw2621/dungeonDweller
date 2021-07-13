@@ -1,19 +1,21 @@
-<script>
-	import Layout from "./components/Layout/Layout.svelte"
-	import CampaignSelector from "./components/CampaignSelector/CampaignSelector.svelte"
-	// import { DmMap } from "./components/DmMap"
-	import { campaignId } from "./store"
+<script lang="ts">
+	import { Layout } from "./components/Layout/"
+	import { CampaignSelector } from "./components/CampaignSelector"
+	import { DmMap } from "./components/DmMap"
+	import { campaignId } from "./store.ts"
 
 
-	// const setCampaignId = e => campaignId.set(e.detail)
+	const openCampaign = (id: number) => {
+		console.log(id)
+		campaignId.set(id)
+	}
 	
 </script>
 
 <Layout>
-	<p>Blah</p>
 	{#if $campaignId}
-	<!-- <DmMap /> -->
+	<DmMap />
 	{:else}
-	<CampaignSelector />
+	<CampaignSelector on:openCampaign={e => openCampaign(e.detail)}/>
 	{/if}
 </Layout>

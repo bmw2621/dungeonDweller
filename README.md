@@ -34,12 +34,15 @@ Recommended to use NVM
 | build        | Concurrently builds both player view and gamemaster view and places into respective build directories                                                             |
 | dev          | Concurrently builds both views and serves on ports 5000 (gamemaster) and 5001 (player), watches for changes to files and rebuilds automatically for hot reloading |
 | start        | Concurrently serves the respective build directories on ports 5000 (gamemaster) and 5001 (player)                                                                 |
+| check        | Concurrently run type checking on gameMaster and player views                                                                                                     |
 | build:gm     | Builds gamemaster view                                                                                                                                            |
 | dev:gm       | Builds and serves gamemaster view on port 5000 and watches files for hot reloading                                                                                |
 | start:gm     | Serves current gamemaster view build on port 5000                                                                                                                 |
+| check:gm     | Run type checking on gamemaster view                                                                                                                              |
 | build:player | Builds player view                                                                                                                                                |
 | dev:player   | Builds and serves player view on port 5000 and watches files for hot reloading                                                                                    |
 | start:player | Serves current player view build on port 5000                                                                                                                     |
+| check:player | Run type checking on player view                                                                                                                                  |
 
 ## TODOs
 
